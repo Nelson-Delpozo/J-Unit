@@ -21,6 +21,16 @@ public class jUnitTests {
         assertNotEquals(4.9, price - discount, 0.5);
     }
 
+    @Test
+    public void testIfObjectsAreDifferent() {
+        Object dog = new Object();
+        Object sheep = new Object();
+        Object clonedSheep = sheep;
+
+        assertNotSame(sheep, dog);
+        assertSame(sheep, clonedSheep);
+    }
+
 
 
 
