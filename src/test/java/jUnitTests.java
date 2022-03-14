@@ -31,6 +31,14 @@ public class jUnitTests {
         assertSame(sheep, clonedSheep);
     }
 
+    @Test
+    public void testIfArrayEquals() {
+        char[] expected = {'J','u','n','i','t'};
+        char[] actual = "Junit".toCharArray();
+
+        assertArrayEquals(expected, actual);
+    }
+
 
 
 
